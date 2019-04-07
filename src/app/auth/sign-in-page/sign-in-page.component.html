@@ -1,0 +1,27 @@
+<div class="main-wrapper">
+  <div class="container">
+    <div class="login-panel">
+      
+      <h2 class="title">Existing Customers</h2>
+        <form>
+          <label>Email</label>
+          
+          <input [uiInput]  name="email" [(ngModel)]="email"placeholder="E-mail">
+          <label>Password</label>
+          <input type="password" [uiInput] name="password" [(ngModel)]="password"placeholder="Password">
+        </form>
+        <div class="forgotten-password">
+          <a href="">Forgotten your password?</a>
+        </div>
+        <div class="login-box">
+          <button class="login" (click)="verif()">Sign In</button>
+        </div>
+    </div>
+    <div class="login-panel">
+      <h2 class="title">New to SALAFNI</h2>
+      <div class="login-box">
+        <button class="login" routerLink="../sign-up">Sing Up</button>
+      </div>
+    </div>
+  </div>
+</div>

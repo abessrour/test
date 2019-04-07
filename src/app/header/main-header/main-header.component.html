@@ -1,0 +1,25 @@
+<div class="top-bar">
+  <div class="main-wrapper">
+    <div >
+      <img src="../../../assets/logo.png">
+    </div>
+    <div class="search">
+      <input type="text" placeholder="Search for product to rent..." [(ngModel)]="inputModel">
+      <button>
+        <kit-icon [name]="'search'" size="20px"></kit-icon>
+      </button>
+    </div>
+    <div class="account">
+      <a routerLink="/auth/sign-in">
+        <kit-icon [name]="'avatar'" size="25px"></kit-icon>
+      </a>
+      
+    </div>
+  </div>
+</div>
+<div class="head">
+  <!--<div class="logo" routerlink="/">alma</div> -->
+</div>
+<div class="navigation">
+  <app-main-menu></app-main-menu>
+</div>
